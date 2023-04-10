@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Envios a LocalStorage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Testing - Add LocalStorage
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-label>{{recovertext}}</ion-label>
+    <input type="text" [(ngModel)]="receivetext">
+    <button class="bt1" (click)="print()">Enviar</button>
+  </div>
+</ion-content>
